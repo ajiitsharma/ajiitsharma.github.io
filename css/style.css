@@ -20,14 +20,25 @@ header {
 	top: 0;
 }
 
+header nav {
+	display: inline-flex;
+	padding: 10px;
+}
+
 header nav a {
 	color: #ddd;
 	margin: 0 1rem;
 	text-decoration: none;
 }
 
+header h1 {
+	color: #ddd;
+	margin: 0 1rem;
+	text-decoration: none;
+}
+
 header nav a:hover {
-	text-decoration: underline;
+	text-decoration: line-through;
 }
 
 .section {
@@ -52,4 +63,24 @@ footer {
 	text-align: center;
 	padding: 2rem;
 	background: #f0f0f0;
+}
+
+.social-icon {
+	display: inline-block;
+	margin: 10px;
+	font-size: 60px; /* Adjust as needed */
+	color: #413e3e; /* Default color */
+	transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icon:hover {
+	color: #3b5998; /* Facebook color on hover */
+}
+
+.twitter:hover {
+	color: #1da1f2; /* Twitter color on hover */
+}
+
+.linkedin:hover {
+	color: #0077b5; /* LinkedIn color on hover */
 }
