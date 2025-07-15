@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
@@ -12,6 +16,8 @@ header {
 	color: white;
 	padding: 2rem;
 	text-align: center;
+	position: sticky;
+	top: 0;
 }
 
 header nav a {
@@ -24,16 +30,13 @@ header nav a:hover {
 	text-decoration: underline;
 }
 
-main {
-	max-width: 800px;
-	margin: 2rem auto;
-	padding: 0 1rem;
-}
-
-footer {
-	text-align: center;
-	padding: 2rem;
-	background: #f0f0f0;
+.section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 4rem 2rem;
+	border-bottom: 1px solid #eee;
 }
 
 h1,
@@ -43,4 +46,10 @@ h2 {
 
 a {
 	color: #0a5d91;
+}
+
+footer {
+	text-align: center;
+	padding: 2rem;
+	background: #f0f0f0;
 }

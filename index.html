@@ -5,41 +5,67 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ajit Sharma | Quantitative Researcher</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 	<body>
 		<header>
-			<h1 style="color: aliceblue">Ajit Sharma</h1>
+			<h1>Ajit Sharma</h1>
 			<p>Quantitative Researcher | Derivative Pricing | Risk Management</p>
 			<nav>
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="blog/index.html">Blog</a>
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#blog">Blog</a>
+				<a href="#contact">Contact</a>
 			</nav>
 		</header>
 
-		<main>
-			<section>
-				<h2>Welcome</h2>
-				<p>
-					This is my personal website where I share my work and thoughts on
-					quantitative finance, derivative pricing, and research ideas.
-				</p>
-			</section>
+		<section id="home" class="section" data-aos="fade-up">
+			<h2>Welcome</h2>
+			<p>
+				This is my personal quant finance profile site with a focus on
+				derivative pricing and quantitative research.
+			</p>
+		</section>
 
-			<section>
-				<h2>Recent Blog Posts</h2>
-				<ul>
-					<li>
-						<a href="blog/first-post.html"
-							>Understanding Variance Swaps and Log Contracts</a
-						>
-					</li>
-				</ul>
-			</section>
-		</main>
+		<section id="about" class="section" data-aos="fade-up">
+			<h2>About Me</h2>
+			<p>
+				I’m a quantitative researcher with expertise in stochastic calculus,
+				risk-neutral pricing, and structured products.
+			</p>
+		</section>
+
+		<section id="projects" class="section" data-aos="fade-up">
+			<h2>Projects</h2>
+			<p>
+				Coming soon: models, white papers, and toolkits related to pricing
+				exotic options and volatility surfaces.
+			</p>
+		</section>
+
+		<section id="blog" class="section" data-aos="fade-up">
+			<h2>Blog</h2>
+			<p>
+				I write about derivative pricing, portfolio replication strategies, and
+				risk management. New posts coming soon.
+			</p>
+		</section>
+
+		<section id="contact" class="section" data-aos="fade-up">
+			<h2>Contact</h2>
+			<p>Email: ajit@example.com | LinkedIn: linkedin.com/in/ajitsharma</p>
+		</section>
 
 		<footer>
 			<p>© 2025 Ajit Sharma</p>
 		</footer>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 1000,
+			});
+		</script>
 	</body>
 </html>
