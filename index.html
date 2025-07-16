@@ -12,17 +12,24 @@
 		/>
 		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body class="font-sans text-gray-900 snap-y snap-mandatory overflow-y-scroll">
 		<!-- =========  NAVBAR  ========= -->
 		<header
 			id="navbar"
-			class="fixed top-0 left-0 right-0 z-50 glass-nav px-6 py-4 transition-transform duration-300"
+			class="fixed top-0 left-0 right-0 z-50 glass-nav px-6 py-4 backdrop-blur-md transition-transform duration-300"
 		>
 			<nav class="max-w-6xl mx-auto flex justify-between items-center">
-				<h1 class="text-lg font-bold tracking-wider">Ajit Sharma</h1>
+				<a href="#home"
+					><h1 class="text-lg font-bold tracking-wider">Ajit Sharma</h1>
+				</a>
 				<ul class="flex gap-6 text-sm">
-					<li><a href="#home" class="hover:text-gray-500">Home</a></li>
 					<li><a href="#about" class="hover:text-gray-500">About</a></li>
 					<li><a href="#projects" class="hover:text-gray-500">Projects</a></li>
 					<li><a href="#blog" class="hover:text-gray-500">Blog</a></li>
@@ -86,7 +93,11 @@
 			<div class="max-w-6xl w-full">
 				<h2 class="text-4xl font-bold mb-10 text-center">Projects</h2>
 				<div class="grid md:grid-cols-2 gap-8">
-					<a href="projects/stochastic-vol.html" class="card card-hover">
+					<a
+						href="projects/stochastic-vol.html"
+						class="card card-hover backdrop-blur-md"
+						data-aos="fade-up"
+					>
 						<img
 							src="images/stochastic.webp"
 							alt="Vol"
@@ -97,7 +108,11 @@
 							Neural-SDE accelerated calibration of rough Bergomi.
 						</p>
 					</a>
-					<a href="projects/nlp-sentiment.html" class="card card-hover">
+					<a
+						href="projects/nlp-sentiment.html"
+						class="card card-hover backdrop-blur-md"
+						data-aos="fade-up"
+					>
 						<img
 							src="images/nlp.webp"
 							alt="NLP"

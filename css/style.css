@@ -4,12 +4,14 @@ html {
 }
 body {
 	-webkit-font-smoothing: antialiased;
+	font-family: "Roboto Serif", serif;
+	font-weight: 400;
 }
 
 /* ---------- Navbar glass & hide/show ---------- */
 .glass-nav {
-	background: rgba(255, 255, 255, 0.6);
-	backdrop-filter: blur(10px);
+	background: rgba(212, 213, 228, 0.6);
+	backdrop-filter: blur(50px);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .nav-hide {
