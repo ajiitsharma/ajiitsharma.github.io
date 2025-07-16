@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Project – Stochastic Volatility Calibration</title>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+	<body class="bg-white text-black font-sans">
+		<main class="max-w-3xl mx-auto px-4 py-20">
+			<a
+				href="../index.html#projects"
+				class="text-sm underline mb-8 inline-block"
+				>&larr; Back to Projects</a
+			>
+			<h1 class="text-3xl font-bold mb-4">
+				Stochastic Volatility Calibration via Neural SDEs
+			</h1>
+			<p class="mb-4">
+				This project implements a deep-learning accelerated calibration routine
+				for the rough Bergomi model. By parameterising the instantaneous
+				variance as the solution to a neural SDE we achieve 50× speed-ups
+				compared to traditional particle methods while maintaining pricing
+				accuracy within 1 bps for the SPX smile.
+			</p>
+			<pre
+				class="bg-gray-100 p-4 rounded text-sm overflow-x-auto"
+			><code>pip install rBergomi torch sdeint</code></pre>
+		</main>
+	</body>
+</html>

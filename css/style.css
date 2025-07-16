@@ -1,86 +1,53 @@
+/* ---------- Scroll snap & base ---------- */
 html {
 	scroll-behavior: smooth;
 }
-
 body {
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background: #ffffff;
-	color: #111;
+	-webkit-font-smoothing: antialiased;
 }
 
-header {
-	background: #0a1f44;
-	color: white;
+/* ---------- Navbar glass & hide/show ---------- */
+.glass-nav {
+	background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.nav-hide {
+	transform: translateY(-100%);
+}
+
+/* ---------- Snap sections ---------- */
+section {
+	scroll-snap-align: start;
+}
+
+/* ---------- Cards ---------- */
+.card {
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 1rem;
 	padding: 2rem;
-	text-align: center;
-	position: sticky;
-	top: 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.card-hover:hover {
+	border-color: #bbb;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-header nav {
-	display: inline-flex;
-	padding: 10px;
+/* ---------- Buttons & inputs ---------- */
+.btn-ghost,
+.input-line {
+	border: 1px solid #d1d1d1;
+	border-radius: 0.5rem;
+	background: transparent;
+	padding: 0.75rem 1rem;
+	transition: border-color 0.3s;
+	width: 100%;
 }
-
-header nav a {
-	color: #ddd;
-	margin: 0 1rem;
-	text-decoration: none;
+.btn-ghost:hover {
+	border-color: #000;
 }
-
-header h1 {
-	color: #ddd;
-	margin: 0 1rem;
-	text-decoration: none;
-}
-
-header nav a:hover {
-	text-decoration: line-through;
-}
-
-.section {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 4rem 2rem;
-	border-bottom: 1px solid #eee;
-}
-
-h1,
-h2 {
-	color: #0a1f44;
-}
-
-a {
-	color: #0a5d91;
-}
-
-footer {
-	text-align: center;
-	padding: 2rem;
-	background: #f0f0f0;
-}
-
-.social-icon {
-	display: inline-block;
-	margin: 10px;
-	font-size: 60px; /* Adjust as needed */
-	color: #413e3e; /* Default color */
-	transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.social-icon:hover {
-	color: #3b5998; /* Facebook color on hover */
-}
-
-.twitter:hover {
-	color: #1da1f2; /* Twitter color on hover */
-}
-
-.linkedin:hover {
-	color: #0077b5; /* LinkedIn color on hover */
+.input-line:focus {
+	outline: none;
+	border-color: #000;
 }

@@ -2,91 +2,183 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ajit Sharma | Quantitative Researcher</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Ajit Sharma – Quant</title>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
 		/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body>
-		<header>
-			<h1>Ajit Sharma</h1>
-			<p>Quantitative Researcher | Derivative Pricing | Risk Management</p>
-			<nav>
-				<a href="#home"><div data-aos="fade-left">Home</div></a>
-				<a href="#about"><div data-aos="fade-left">About</div></a>
-				<a href="#projects"><div data-aos="fade-left">Projects</div></a>
-				<a href="#blog"><div data-aos="fade-left">Blog</div></a>
-				<a href="#contact"><div data-aos="fade-left">Contact</div></a>
+	<body class="font-sans text-gray-900 snap-y snap-mandatory overflow-y-scroll">
+		<!-- =========  NAVBAR  ========= -->
+		<header
+			id="navbar"
+			class="fixed top-0 left-0 right-0 z-50 glass-nav px-6 py-4 transition-transform duration-300"
+		>
+			<nav class="max-w-6xl mx-auto flex justify-between items-center">
+				<h1 class="text-lg font-bold tracking-wider">Ajit Sharma</h1>
+				<ul class="flex gap-6 text-sm">
+					<li><a href="#home" class="hover:text-gray-500">Home</a></li>
+					<li><a href="#about" class="hover:text-gray-500">About</a></li>
+					<li><a href="#projects" class="hover:text-gray-500">Projects</a></li>
+					<li><a href="#blog" class="hover:text-gray-500">Blog</a></li>
+					<li><a href="#contact" class="hover:text-gray-500">Contact</a></li>
+				</ul>
 			</nav>
 		</header>
 
-		<section id="home" class="section" data-aos="fade-up">
-			<h2>Welcome</h2>
-			<p>
-				This is my personal quant finance profile site with a focus on
-				derivative pricing and quantitative research.
-			</p>
+		<!-- =========  HOME  ========= -->
+		<section
+			id="home"
+			class="snap-start h-screen flex items-center justify-center px-6 bg-gradient-to-br from-gray-50 to-gray-200"
+		>
+			<div class="text-center" data-aos="fade-up">
+				<img
+					src="images/profile.jpeg"
+					alt="Profile"
+					class="w-30 h-30 rounded-full mx-auto mb-6 border border-gray-300"
+				/>
+				<h1 class="text-5xl md:text-6xl font-bold mb-2">Ajit Sharma</h1>
+				<p class="text-xl text-gray-600 mb-8">
+					Quantitative Analyst & NLP Researcher
+				</p>
+				<a href="#about" class="btn-ghost">Scroll to explore</a>
+			</div>
 		</section>
 
-		<section id="about" class="section" data-aos="fade-up">
-			<h2>About Me</h2>
-			<p>
-				I’m a quantitative researcher with expertise in stochastic calculus,
-				risk-neutral pricing, and structured products.
-			</p>
+		<!-- =========  ABOUT  ========= -->
+		<section
+			id="about"
+			class="snap-start h-screen flex items-center justify-center px-6 bg-white"
+		>
+			<div
+				class="max-w-5xl w-full grid md:grid-cols-2 gap-12"
+				data-aos="fade-up"
+			>
+				<div class="card">
+					<h2 class="text-3xl font-bold mb-4">Education</h2>
+					<ul class="space-y-2 text-gray-600">
+						<li>• M.Tech Financial Engineering – IIT Bombay</li>
+						<li>• B.Tech Computer Science – NIT Trichy</li>
+					</ul>
+				</div>
+				<div class="card">
+					<h2 class="text-3xl font-bold mb-4">Expertise</h2>
+					<ul class="space-y-2 text-gray-600">
+						<li>• Stochastic Calculus & PDEs</li>
+						<li>• Derivative Pricing & Risk</li>
+						<li>• Machine Learning & NLP</li>
+						<li>• Python / C++ / PyTorch</li>
+					</ul>
+				</div>
+			</div>
 		</section>
 
-		<section id="projects" class="section" data-aos="fade-up">
-			<h2>Projects</h2>
-			<p>
-				Coming soon: models, white papers, and toolkits related to pricing
-				exotic options and volatility surfaces.
-			</p>
+		<!-- =========  PROJECTS  ========= -->
+		<section
+			id="projects"
+			class="snap-start h-screen flex items-center justify-center px-6 bg-gray-50"
+		>
+			<div class="max-w-6xl w-full">
+				<h2 class="text-4xl font-bold mb-10 text-center">Projects</h2>
+				<div class="grid md:grid-cols-2 gap-8">
+					<a href="projects/stochastic-vol.html" class="card card-hover">
+						<img
+							src="images/stochastic.webp"
+							alt="Vol"
+							class="w-full h-48 object-cover rounded-xl mb-4"
+						/>
+						<h3 class="text-xl font-semibold">Stochastic Vol Calibration</h3>
+						<p class="text-gray-600">
+							Neural-SDE accelerated calibration of rough Bergomi.
+						</p>
+					</a>
+					<a href="projects/nlp-sentiment.html" class="card card-hover">
+						<img
+							src="images/nlp.webp"
+							alt="NLP"
+							class="w-full h-48 object-cover rounded-xl mb-4"
+						/>
+						<h3 class="text-xl font-semibold">Quant-NLP Sentiment Engine</h3>
+						<p class="text-gray-600">FinBERT forecasting central-bank moves.</p>
+					</a>
+				</div>
+			</div>
 		</section>
 
-		<section id="blog" class="section" data-aos="fade-up">
-			<h2>Blog</h2>
-			<p>
-				I write about derivative pricing, portfolio replication strategies, and
-				risk management. New posts coming soon.
-			</p>
-		</section>
-
-		<section id="contact" class="section" data-aos="fade-up">
-			<h2>Contact</h2>
-			<p>Email: ajit@example.com | LinkedIn: linkedin.com/in/ajitsharma</p>
-		</section>
-
-		<footer>
-			<p>© 2025 Ajit Sharma</p>
-			<div class="social-media">
-				<h3>Connect with us</h3>
-				<ul class="footerlist">
-					<a href="#" class="social-icon facebook"
-						><i class="fab fa-facebook"></i
-					></a>
-					<a href="#" class="social-icon twitter"
-						><i class="fab fa-twitter"></i
-					></a>
-					<a href="#" class="social-icon linkedin"
-						><i class="fab fa-linkedin"></i
-					></a>
+		<!-- =========  BLOG  ========= -->
+		<section
+			id="blog"
+			class="snap-start h-screen flex items-center justify-center px-6 bg-white"
+		>
+			<div class="max-w-4xl w-full">
+				<h2 class="text-4xl font-bold mb-10 text-center">Latest Thoughts</h2>
+				<ul class="space-y-6">
+					<li data-aos="fade-up" class="card card-hover">
+						<a
+							href="blog/2025-07-16-stochastic-calculus.html"
+							class="block p-6"
+						>
+							<h3 class="text-xl font-semibold">
+								Stochastic Calculus & Deep Learning Synergy
+							</h3>
+							<time class="text-sm text-gray-500">16 Jul 2025</time>
+						</a>
+					</li>
+					<li data-aos="fade-up" class="card card-hover">
+						<a href="blog/2025-06-30-nlp-quant.html" class="block p-6">
+							<h3 class="text-xl font-semibold">
+								NLP for Quant Research – Beyond Bag-of-Words
+							</h3>
+							<time class="text-sm text-gray-500">30 Jun 2025</time>
+						</a>
+					</li>
 				</ul>
 			</div>
-		</footer>
+		</section>
 
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script>
-			AOS.init({
-				duration: 2000,
-			});
-		</script>
+		<!-- =========  CONTACT  ========= -->
+		<section
+			id="contact"
+			class="snap-start h-screen flex items-center justify-center px-6 bg-gray-50"
+		>
+			<div class="max-w-lg w-full card p-8" data-aos="fade-up">
+				<h2 class="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
+				<form id="contactForm" class="space-y-4">
+					<input
+						type="text"
+						name="name"
+						placeholder="Name"
+						required
+						class="input-line"
+					/>
+					<input
+						type="email"
+						name="email"
+						placeholder="Email"
+						required
+						class="input-line"
+					/>
+					<textarea
+						name="message"
+						rows="4"
+						placeholder="Message"
+						required
+						class="input-line"
+					></textarea>
+					<button type="submit" class="btn-ghost w-full">Send Message</button>
+				</form>
+				<p class="text-center text-xs text-gray-400 mt-6">
+					© <span id="year"></span> Ajit Sharma
+				</p>
+			</div>
+		</section>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="js/app.js"></script>
 	</body>
 </html>
